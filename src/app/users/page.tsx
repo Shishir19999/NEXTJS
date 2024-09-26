@@ -1,5 +1,5 @@
 import React from 'react'
-import UserTable from './userTable';
+import UserTable from './UserTable';
 
 interface Props{
   searchParams:{

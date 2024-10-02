@@ -5,4 +5,4 @@ export default function CustomNotFoundPage(){
             <h1 className="text-white text-[80px] font-bold">Page Not Found</h1>
         </div>
     )
-}
+} 

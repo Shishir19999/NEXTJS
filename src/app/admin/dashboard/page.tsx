@@ -12,7 +12,7 @@ export default function DashboardPage() {
   ]
 
   return (
-    <div className='grid grid-cols-12'>
+    <div className='grid grid-cols-12 gap-[30px]'>
         
         {
           panelItems.map((item, index) =>{

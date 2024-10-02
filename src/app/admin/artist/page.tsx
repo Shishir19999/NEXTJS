@@ -2,7 +2,7 @@
 
 import GoToBack from '@/components/GoToBack';
 import React from 'react';
-import { FaEdit } from "react-icons/fa";
+import { FaEdit,FaMusic } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoMdEye } from "react-icons/io";
 
@@ -60,13 +60,23 @@ export default function ArtistList() {
       <GoToBack />
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold mb-4">Artist List</h1>
+        <div className="flex gap-1">
+
+        <button className="btn btn-primary text-white mb-[4px]">
+          Import CSV
+        </button>
+        <button className="btn btn-secondary text-white mb-[4px]">
+          Export CSV
+        </button>
         <button className="btn btn-success text-white mb-[4px]">
           Create Artist
         </button>
+        </div>
+        
       </div>
       <table className='table table-bordered mb-4 border-b pb-3'>
         <thead>
-          <tr className='text-[20px] bg-black text-white'>
+          <tr className='text-[17px] bg-black text-white'>
             <th className="w-[5%]">SN</th>
             <th className="w-[20%]">Name</th>
             <th className="w-[15%]">First Release Year</th>
@@ -89,6 +99,9 @@ export default function ArtistList() {
                 <td>{artist.gender}</td>
                 <td>{artist.dateOfBirth}</td>
                 <td className="flex space-x-2">
+                  <button className="bg-purple-500 py-2 px-4 text-white rounded-lg">
+                  <FaMusic /> 
+                  </button>
                   <button className="bg-blue-500 py-2 px-4 text-white rounded-lg">
                     <IoMdEye />
                   </button>

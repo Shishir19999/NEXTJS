@@ -6,9 +6,9 @@ import { FaUsers,FaGuitar, FaMusic } from "react-icons/fa";
 export default function DashboardPage() {
 
   const panelItems = [
-    { color: "#27ae60", href: "/admin/user", title: "Users", counter: 6, icon :  <FaUsers /> },
-    { color: "#27ae60", href: "/admin/artist", title: "Artists", counter: 16, icon :  <FaGuitar /> },
-    { color: "#27ae60", href: "/admin/music", title: "Musics", counter: 206, icon :  < FaMusic/> },
+    { color: "#235964", href: "/admin/user", title: "Users", counter: 6, icon :  <FaUsers /> },
+    { color: "#ff9933", href: "/admin/artist", title: "Artists", counter: 16, icon :  <FaGuitar /> },
+    { color: "#ff3333", href: "/admin/music", title: "Musics", counter: 206, icon :  < FaMusic/> },
   ]
 
   return (

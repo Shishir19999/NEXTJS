@@ -4,7 +4,8 @@ interface Props{
     category_name:string
   }
 }
-export default function category({params:{category_name}}:Props) {
+export default async function category({params}:Props) {
+  const {category_name} = await params;
   return (
     <div>
       category:{category_name}

@@ -1,22 +1,19 @@
 import React from 'react'
 
-interface Props{
-    params: {
-        user_id: string,
-        photo_id: string,
-    }
+interface Props {
+  params: Promise<{
+    user_id: string,
+    photos_id: string,
+  }>
 }
-  
-export default function SinglePhotoPage({ params: { user_id,photo_id } }: Props) {
-    console.log("props",user_id,photo_id);
 
-
-
+export default async function SinglePhotoPage({ params }: Props) {
+  const { user_id, photos_id } = await params;
   return (
-    <div>
-        <h1>User ID: {user_id}</h1>
-        <h1>Photo ID: {photo_id}</h1>
-        Single Photo Page
+    <div className="p-6">
+      <h1>User ID: {user_id}</h1>
+      <h1>Photo ID: {photos_id}</h1>
+      Single Photo Page
     </div>
   )
 }
